@@ -3,8 +3,10 @@
 
 <head>
     <title>Job Search</title>
+    <script src="../JS/lib/jquery.js"></script>
+    
+    <script src="../JS/lib/canvasjs.min.js"></script>
     <script src="../JS/jobsearch.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -30,7 +32,7 @@
 
     <section id="firstTenResults">
         <input name="searchTxt" type="text" maxlength="512" id="searchTxt" class="searchField" />
-        <button onclick="firstTenResults()">Display Results</button>
+        <button id="searchBtn">Display Results</button>
 
 
         <br>
@@ -97,7 +99,7 @@
     <section id="searchedJob">
 
         <input name="searchSOC" type="text" maxlength="512" id="searchSOC" class="searchField" />
-        <button onclick="searchSOC()">Display SOC Details</button>
+        <button id="searchSOCBtn">Display SOC Details</button>
 
         <p>SOC:
             <a id="SOC"></a>
@@ -120,9 +122,12 @@
         </p>
 
         <p>Weekly Pay For in Scotland
-            <a id="pay"></a>
+            <table id="chart">
+            </table>
         </p>
 
+
+        
 
 
     </section>
