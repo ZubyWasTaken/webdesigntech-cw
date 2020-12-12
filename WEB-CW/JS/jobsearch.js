@@ -48,24 +48,6 @@ function firstTenResults() {
     document.getElementById("Job10SOC").innerHTML = "SOC: " + jsonData[9]["soc"];
     document.getElementById("Job10Title").innerHTML = "Title: " + jsonData[9]["title"];
 
-
-
-
-    // var jobSOC = jsonData[0]["soc"]
-    // document.getElementById("SOC").innerHTML = jobSOC;
-
-    // var title = jsonData[0]["title"]
-    // document.getElementById("title").innerHTML = title;
-
-    // var desc = jsonData[0]["description"]
-    // document.getElementById("desc").innerHTML = desc;
-
-    // var qualifications = jsonData[0]["qualifications"]
-    // document.getElementById("qualifications").innerHTML = qualifications;
-
-    // var tasks = jsonData[0]["tasks"]
-    // document.getElementById("tasks").innerHTML = tasks;
-
     // weeklyPayFromSOC(jsonData)
 
     // document.getElementById("pay").innerHTML = weeklyPayData;
