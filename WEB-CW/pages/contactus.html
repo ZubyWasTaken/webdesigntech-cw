@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<>
 
 <head>
     <title>Contact Us</title>
+    <link rel="stylesheet" href="../CSS/contactus.css">
 </head>
 
 <body>
@@ -24,7 +25,24 @@
         <li>
             <a href="unisearch.html">University Search</a>
         </li>
-        
+
     </ul>
+
+    <section class="contentArea">
+        
+        <form id="contactForm" action="../PHP/contactus.php" method="post">
+          <label for="name" class="textLabel">Enter your name:</label>
+          <input type="text" name="name" id="name" required />
+
+          <label for="email" class="textLabel">Enter Your email:</label>
+          <input type="email" name="email" id="email" required />
+
+          <label for="message" class="textLabel">Enter your message:</label>
+          <textarea id="message" name="message" placeholder="Write your message." style="height:200px"></textarea>
+
+
+          <input type="submit" name="submit" id="submit" value="Submit" />
+        </form>
+      </section>
 
 </body>
