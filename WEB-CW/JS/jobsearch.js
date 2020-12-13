@@ -75,7 +75,6 @@ $(document).ready(function () {
         weeklyPayFromSOC(jsonData)
 
         console.log(weeklyPayData)
-
         $('#showChart').css('visibility', 'visible');
 
         
@@ -85,7 +84,7 @@ $(document).ready(function () {
     $("#showChart").on("click", function showChart(){
         var chart = new CanvasJS.Chart("chartContainer", {
             title:{
-                text: "Weekly Pay in Scotland in GBP"              
+                text: "Weekly Pay in Scotland for " + singularJobJSON["title"] +" (in GBP)"              
             },
         
             data: [              
