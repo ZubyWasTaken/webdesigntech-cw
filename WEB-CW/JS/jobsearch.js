@@ -1,12 +1,14 @@
 $(document).ready(function () {
 
+    //variabled declared
     var searchjobName;
     var jsonData;
     var jobSOC;
     var weeklyPayData = null;
     var singularJobJSON;
 
-
+    
+    $('#showChart').css('visibility', 'hidden');
 
     $("#searchBtn").on("click", function firstTenResults() {
         var searchjobName = document.getElementById("searchTxt").value
@@ -16,7 +18,6 @@ $(document).ready(function () {
 
         allJSONData(searchjobName)
 
-        console.log(jsonData)
         document.getElementById("Job1SOC").innerHTML = "SOC: " + jsonData[0]["soc"];
         document.getElementById("Job1Title").innerHTML = "Title: " + jsonData[0]["title"];
 
@@ -47,11 +48,6 @@ $(document).ready(function () {
         document.getElementById("Job10SOC").innerHTML = "SOC: " + jsonData[9]["soc"];
         document.getElementById("Job10Title").innerHTML = "Title: " + jsonData[9]["title"];
 
-        // weeklyPayFromSOC(jsonData)
-
-        // document.getElementById("pay").innerHTML = weeklyPayData;
-
-        // console.log(weeklyPayData)
     })
 
     $("#searchSOCBtn").on("click", function searchSOC() {
@@ -79,9 +75,36 @@ $(document).ready(function () {
         weeklyPayFromSOC(jsonData)
 
         console.log(weeklyPayData)
+
+        $('#showChart').css('visibility', 'visible');
+
+        
     })
 
 
+    $("#showChart").on("click", function showChart(){
+        var chart = new CanvasJS.Chart("chartContainer", {
+            title:{
+                text: "Weekly Pay in Scotland in GBP"              
+            },
+        
+            data: [              
+            {
+                // Change type to "doughnut", "line", "splineArea", etc.
+                type: "column",
+                dataPoints: [
+                    { label: weeklyPayData["series"][0]["year"], y: weeklyPayData["series"][0]["estpay"]  },
+                    { label: weeklyPayData["series"][1]["year"], y: weeklyPayData["series"][1]["estpay"]  },
+                    { label: weeklyPayData["series"][2]["year"], y: weeklyPayData["series"][2]["estpay"]  },
+                    { label: weeklyPayData["series"][3]["year"], y: weeklyPayData["series"][3]["estpay"]  }
+                ]
+            }
+            ]
+        });
+        chart.render();
+    })
+
+    
 
 
 
