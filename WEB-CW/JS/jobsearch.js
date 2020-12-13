@@ -111,7 +111,7 @@ $(document).ready(function () {
     function singularJob(jobSOC) {
         singlejobAPI = 'http://api.lmiforall.org.uk/api/v1/soc/code/' + jobSOC
 
-        fetch(socAPI)
+        fetch(singlejobAPI)
             .then(response => response.json())
             .then((out) => {
                 singularJobJSON = out

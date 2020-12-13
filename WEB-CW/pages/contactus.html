@@ -9,7 +9,7 @@
 
 <body>
 
-    <h1>Contact Us</h1>
+
 
 
     <ul>
@@ -28,22 +28,23 @@
         </li>
 
     </ul>
+    <h2>Contact Form</h3>
+        <section class="contentArea">
 
-    <section class="contentArea">
-        <h3>Contact Form</h3>
-        <form id="contactForm" action="../PHP/contactus.php" method="post">
-            <label for="name" class="textLabel">Enter Your Name:</label>
-            <input type="text" name="name" id="name" required />
+            <form id="contactForm" action="../PHP/contactus.php" method="post">
+                <label for="name" class="textLabel">Enter Your Name:</label>
+                <br>
+                <input type="text" name="name" id="name" required />
+                <br>
+                <label for="email" class="textLabel">Enter Your Email:</label>
+                <input type="email" name="email" id="email" required />
 
-            <label for="email" class="textLabel">Enter Your Email:</label>
-            <input type="email" name="email" id="email" required />
-
-            <label for="message" class="textLabel">Enter Your Message:</label>
-            <textarea id="message" name="message" placeholder="Write your message." style="height:200px"></textarea>
+                <label for="message" class="textLabel">Enter Your Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message." style="height:200px"></textarea>
 
 
-            <input type="submit" name="submit" id="submit" value="Submit" />
-        </form>
-    </section>
+                <input type="submit" name="submit" id="submit" value="Submit" />
+            </form>
+        </section>
 
 </body>

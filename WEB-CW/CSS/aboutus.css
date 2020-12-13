@@ -1,5 +1,3 @@
-/* Copy this to each page */
-
 body {
     font-family: 'Times New Roman', Times, serif;
 }
@@ -11,6 +9,7 @@ h2 {
     margin-right: auto;
     text-align: center;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -54,9 +53,11 @@ li a:hover {
     background-color: #111;
 }
 
-/* End */
+.container {
+    width: 50%;
+}
 
-#home_paragraph_1 {
+#jobsearch {
     background-color: white;
     width: 25%;
     margin-left: auto;
@@ -64,7 +65,8 @@ li a:hover {
     text-align: center;
 }
 
-#home_paragraph_2 {
+#unisearch
+ {
     background-color: white;
     width: 25%;
     margin-left: auto;
