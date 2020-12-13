@@ -1,146 +1,147 @@
 <!DOCTYPE html>
-<div lang="en">
+<html lang="en">
 
-    <head>
-        <title>Job Search</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="../CSS/jobsearch.css">
-        <script src="../JS/lib/jquery.js"></script>
-        <script src="../JS/lib/canvasjs.min.js"></script>
-        <script src="../JS/jobsearch.js"></script>
-    </head>
+<head>
+    <title>Job Search</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../CSS/jobsearch.css">
+    <script src="../JS/lib/jquery.js"></script>
+    <script src="../JS/lib/canvasjs.min.js"></script>
+    <script src="../JS/jobsearch.js"></script>
+</head>
 
-    <body>
-
-
+<body>
 
 
-        <ul>
 
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="aboutus.html">About Us</a>
-            </li>
-            <li>
-                <a href="unisearch.html">University Search</a>
-            </li>
-            <li>
-                <a href="contactus.html">Contact Us</a>
-            </li>
-        </ul>
 
-        <h2>Job Search</h2>
+    <ul>
 
-        <section id="firstTenResults">
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="aboutus.html">About Us</a>
+        </li>
+        <li>
+            <a href="unisearch.html">University Search</a>
+        </li>
+        <li>
+            <a href="contactus.html">Contact Us</a>
+        </li>
+    </ul>
 
-            <div class="contentArea">
-                <input name="searchTxt" type="text" maxlength="512" id="searchTxt" class="searchField" />
-                <br>
-                <button id="searchBtn">Display Results (click twice)</button>
+    <h2>Job Search</h2>
 
-            </div>
+    <section id="firstTenResults">
+
+        <div class="contentArea">
+            <input name="searchTxt" type="text" maxlength="512" id="searchTxt" class="searchField" />
             <br>
+            <button id="searchBtn">Display Results (click twice)</button>
+
+        </div>
+        <br>
+        <br>
+
+        <h3>First 10 Results</h3>
+        <p id="alljobs">
+            <a id="Job1SOC"></a> <br>
+            <a id="Job1Title"></a><br>
+
             <br>
 
-            <h3>First 10 Results</h3>
-            <p id="alljobs">
-                <a id="Job1SOC"></a> <br>
-                <a id="Job1Title"></a><br>
+            <a id="Job2SOC"></a> <br>
+            <a id="Job2Title"></a><br>
 
-                <br>
+            <br>
 
-                <a id="Job2SOC"></a> <br>
-                <a id="Job2Title"></a><br>
+            <a id="Job3SOC"></a> <br>
+            <a id="Job3Title"></a><br>
 
-                <br>
+            <br>
 
-                <a id="Job3SOC"></a> <br>
-                <a id="Job3Title"></a><br>
+            <a id="Job4SOC"></a> <br>
+            <a id="Job4Title"></a><br>
 
-                <br>
+            <br>
 
-                <a id="Job4SOC"></a> <br>
-                <a id="Job4Title"></a><br>
+            <a id="Job5SOC"></a> <br>
+            <a id="Job5Title"></a><br>
 
-                <br>
+            <br>
 
-                <a id="Job5SOC"></a> <br>
-                <a id="Job5Title"></a><br>
+            <a id="Job6SOC"></a> <br>
+            <a id="Job6Title"></a><br>
 
-                <br>
+            <br>
 
-                <a id="Job6SOC"></a> <br>
-                <a id="Job6Title"></a><br>
+            <a id="Job7SOC"></a> <br>
+            <a id="Job7Title"></a><br>
 
-                <br>
+            <br>
 
-                <a id="Job7SOC"></a> <br>
-                <a id="Job7Title"></a><br>
+            <a id="Job8SOC"></a> <br>
+            <a id="Job8Title"></a><br>
 
-                <br>
+            <br>
 
-                <a id="Job8SOC"></a> <br>
-                <a id="Job8Title"></a><br>
+            <a id="Job9SOC"></a> <br>
+            <a id="Job9Title"></a><br>
 
-                <br>
+            <br>
 
-                <a id="Job9SOC"></a> <br>
-                <a id="Job9Title"></a><br>
-
-                <br>
-
-                <a id="Job10SOC"></a> <br>
-                <a id="Job10Title"></a><br>
+            <a id="Job10SOC"></a> <br>
+            <a id="Job10Title"></a><br>
 
 
+        </p>
+
+    </section>
+
+
+    <section id="searchedJob">
+        
+        <div class="contentArea">
+            <input name="searchSOC" type="text" maxlength="512" id="searchSOC" class="searchField" />
+            <br>
+            <button id="searchSOCBtn">Display SOC Details (click twice)</button>
+        </div>
+        <h3>Details for Searched SOC</h3>
+        <div id="singlejob">
+            <p>SOC:
+                <a id="SOC"></a>
             </p>
 
-        </section>
-
-
-        <section id="searchedJob">
-            <div class="contentArea">
-                <input name="searchSOC" type="text" maxlength="512" id="searchSOC" class="searchField" />
-                <br>
-                <button id="searchSOCBtn">Display SOC Details (click twice)</button>
-            </div>
-            <div id="alljobs">
-                <p>SOC:
-                    <a id="SOC"></a>
-                </p>
-
-                <p>Title:
-                    <a id="title"></a>
-                </p>
-
-                <p>Description:
-                    <a id="desc"></a>
-                </p>
-
-                <p>Qualifications:
-                    <a id="qualifications"></a>
-                </p>
-
-                <p>Tasks:
-                    <a id="tasks"></a>
-                </p>
-
-            </div>
-
-
-            <p>
-            <div id="chartContainer"></div>
+            <p>Title:
+                <a id="title"></a>
             </p>
 
+            <p>Description:
+                <a id="desc"></a>
             </p>
 
-            <div class="contentArea">
-                <button id="showChart">Show Chart</button>
+            <p>Qualifications:
+                <a id="qualifications"></a>
+            </p>
 
-            </div>
-        </section>
+            <p>Tasks:
+                <a id="tasks"></a>
+            </p>
+
+        </div>
+
 
         
-    </body>
+        <div id="chartContainer"></div>
+        
+
+
+        <div class="contentArea">
+            <button id="showChart">Show Chart</button>
+
+        </div>
+    </section>
+
+
+</body>
