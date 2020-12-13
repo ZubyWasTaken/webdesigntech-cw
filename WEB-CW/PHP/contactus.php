@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "database";
+$dbname = "databaseZubair";
 try {
 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -12,7 +12,7 @@ catch(PDOException $e)
 {
 echo "Connection failed: " . $e->getMessage();
 }
-$query=$conn->prepare("INSERT INTO ContactUs (name, email, message) VALUES (?,?,?)");
+$query=$conn->prepare("INSERT INTO ContactUsZubair (name, email, message) VALUES (?,?,?)");
 $query->bindParam(1, $name);
 $query->bindParam(2, $email);
 $query->bindParam(3, $message);

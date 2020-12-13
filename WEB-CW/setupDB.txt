@@ -1,0 +1,2 @@
+A database called 'databaseZubair' will need to be made on phpmyadmin.
+Running setupContactUsTable.php will setup all the tables.
