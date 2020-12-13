@@ -10,7 +10,7 @@ $(document).ready(function () {
     
     $('#showChart').css('visibility', 'hidden');
 
-    $("#searchBtn").on("click", function firstTenResults() {
+    $("#searchBtn").on("click", function getName() {
         var searchjobName = document.getElementById("searchTxt").value
         // document.getElementById("jobName").innerHTML = jobName;
         searchjobName = searchjobName.replace(/\s/g, '%20')
