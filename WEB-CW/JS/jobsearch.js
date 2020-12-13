@@ -109,9 +109,9 @@ $(document).ready(function () {
 
 
     function singularJob(jobSOC) {
-        urlAPI = 'http://api.lmiforall.org.uk/api/v1/soc/code/' + jobSOC
+        singlejobAPI = 'http://api.lmiforall.org.uk/api/v1/soc/code/' + jobSOC
 
-        fetch(urlAPI)
+        fetch(socAPI)
             .then(response => response.json())
             .then((out) => {
                 singularJobJSON = out
@@ -121,9 +121,9 @@ $(document).ready(function () {
     }
 
     function allJSONData(searchjobName) {
-        urlAPI = 'http://api.lmiforall.org.uk/api/v1/soc/search?q=' + searchjobName
+        alljobAPI = 'http://api.lmiforall.org.uk/api/v1/soc/search?q=' + searchjobName
 
-        fetch(urlAPI)
+        fetch(alljobAPI)
             .then(response => response.json())
             .then((out) => {
                 jsonData = out
